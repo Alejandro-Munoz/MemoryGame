@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/memory.css">
+</head>
+<body>
+
+<div class="content">
+    <div id="container">
+
+        <div id="my-memory-game"></div>
+
+    </div>
+</div>
+
+
+<script src="js/app.js"></script>
+<script>
+    (function(){
+        var m = new Memory({
+            wrapperID : "my-memory-game",
+            cards : [
+                {
+                    id : 1,
+                    img: "img/default/plant-01.png"
+                },
+                {
+                    id : 2,
+                    img: "img/default/plant-02.png"
+                },
+                {
+                    id : 3,
+                    img: "img/default/plant-03.png"
+                },
+                {
+                    id : 4,
+                    img: "img/default/plant-04.png"
+                },
+                {
+                    id : 5,
+                    img: "img/default/plant-05.png"
+                },
+                {
+                    id : 6,
+                    img: "img/default/plant-06.png"
+                },
+                {
+                    id : 7,
+                    img: "img/default/plant-07.png"
+                },
+                {
+                    id : 8,
+                    img: "img/default/plant-08.png"
+                },
+                {
+                    id : 9,
+                    img: "img/default/plant-09.png"
+                },
+                {
+                    id : 10,
+                    img: "img/default/plant-10.png"
+                },
+                {
+                    id : 11,
+                    img: "img/default/plant-11.png"
+                },
+                {
+                    id : 12,
+                    img: "img/default/plant-12.png"
+                },
+                {
+                    id : 13,
+                    img: "img/default/plant-13.png"
+                },
+                {
+                    id : 14,
+                    img: "img/default/plant-14.png"
+                },
+                {
+                    id : 15,
+                    img: "img/default/plant-15.png"
+                }
+            ],
+            onGameStart : function() { return false; },
+            onGameEnd : function() { return false; }
+        });
+    })();
+</script>
+</body>
+</html>
